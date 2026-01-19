@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+/* APP-css */
+.App-container{
+  padding: 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header-css */
+.logo{
+  height: 50px;
+  cursor: pointer;
 }
+.header-container{
+border: 1px solid black;
+ display: flex;
+ justify-content: space-between;
+ padding: 0 40px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-items {
   display: flex;
-  flex-direction: column;
+  list-style-type: none;
+  gap: 30px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-items li {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #3d4152;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-items li:hover {
+  color: #fc8019; /* Swiggy orange */
+}
+/* Body */
+.body-cointain{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* card */
+.card-container{
+  white-space: nowrap;        /* stay on one line */
+  overflow: hidden;           /* hide extra text */
+  text-overflow: ellipsis;
+  background-color: rgb(203, 199, 199);
+  width: 200px;
+  height: 400px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.card-container img {
+  width: 95%;
+  height: 45%;
+  padding: 4px;
 }

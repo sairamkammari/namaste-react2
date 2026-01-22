@@ -14,9 +14,6 @@ const [searchtext, setSearchtext] = useState("")
         console.log( "data...", jsonData);
         const resData = jsonData?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         setReslist(resData || [])
-        // console.log(resData[]?.info.name, "resData")
-        // console.log(resData?.[0]?.info?.name);
-
     }
     const filterCards = reslist.filter((fil) =>
     

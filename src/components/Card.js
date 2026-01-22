@@ -17,19 +17,3 @@ const {name, avgRating, cuisines, areaName, cloudinaryImageId} = reslistdata.inf
     )
 }
 export default RestaCard;
-// const RestaCard = ({ data }) => {
-//   if (!data?.info) return null;
-
-//   const { name, avgRating, cuisines, areaName } = data.info;
-
-//   return (
-//     <div className="card-container">
-//       <h3>{name}</h3>
-//       <h4>⭐ {avgRating}</h4>
-//       <h5>{cuisines?.join(", ")}</h5>
-//       <h5>{areaName}</h5>
-//     </div>
-//   );
-// };
-
-// export default RestaCard;
